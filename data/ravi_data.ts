@@ -6,6 +6,8 @@ export interface ProfileData {
   location: string;
   education: string;
   experience: string;
+  phone: string;
+  whatsappLink: string;
   roles: string[];
   socialLinks: {
     facebook: string;
@@ -14,6 +16,11 @@ export interface ProfileData {
     youtubeHandle: string;
     facebookHandle: string;
   };
+  bannerImages: {
+    src: string;
+    alt: string;
+    title: string;
+  }[];
   stats: {
     label: string;
     value: string;
@@ -55,6 +62,25 @@ export const raviMehmiData: ProfileData = {
   location: "Ludhiana, Punjab, India",
   education: "GREEN LAND BUSINESS SCHOOL",
   experience: "Hawk Records (Model / Writer / Producer)",
+  phone: "+91 95692-99997",
+  whatsappLink: "https://wa.me/919569299997?text=Hello%20Ravi%20Mehmi,%20I%20want%20to%20inquire%20about%20RM%20Media%20promotional%20services",
+  bannerImages: [
+    {
+      src: "/images/banner2.jpg",
+      alt: "YouTube Channel Monetization Available RM Media",
+      title: "YouTube Monetization & Partner Program"
+    },
+    {
+      src: "/images/banner3.jpg",
+      alt: "YouTube & Google Ads Worldwide & India Offer RM Media",
+      title: "YouTube & Google Ads Package Offers"
+    },
+    {
+      src: "/images/banner1.jpg",
+      alt: "Small Investment Big Returns Poster Ravi Mehmi",
+      title: "Digital Promotion & Growth Plan"
+    }
+  ],
   roles: [
     "Online Social Media Promoter",
     "Punjabi Lyricist & Poet",
